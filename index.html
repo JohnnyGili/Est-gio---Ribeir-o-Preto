@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Ex_1(){
+            var v1=0;
+            var v2=1;
+            var v3=0;
+            controle = false;
+            var valor = prompt("Veja se é o número de Fibonacci");
+            for(i=0;i<valor;i++){
+                v3=v1 + v2
+                if (valor==v1+v2) {
+                    alert("O número é um de Fibonacci")
+                    controle = true;
+                } else{controle = false}
+                
+                v1=v2
+                v2=v3;  
+            }
+            if(controle == false){
+                alert("O número não é um de Fibonacci")
+            }
+        }
+
+        function Ex_2(){
+            var letraA = "";
+            var SomaDeAs = 0;
+            letraA = prompt("Existencia da letra A ou a");
+            for (i=0;i<letraA.length;i++) {
+                if(letraA[i]==="a"||letraA[i]==="A"){
+                    SomaDeAs++;
+                }               
+            }
+            alert("A soma total de todos os 'A' e 'a' é: "+SomaDeAs);
+        }
+
+        function Ex_3(){
+            var soma=0;
+            for(k=1;k<=12;k++){
+                soma=soma+k;
+            }
+            alert("A soma é: "+ soma);
+        }
+
+        function Ex_4(){
+            alert("A lógica da letra a) é +2, e a resposta é 9.");
+            alert("A lógica da letra b) é 2*,e a resposta é 128.");
+            alert("A lógica da letra c) é aumentando em números impar do +1, +3, +5..., e a resposta é 49.");
+            alert("A lógica da letra d) é que são pares ao quadrado do 2², 4², 6²..., e a resposta é 100.");
+            alert("A lógica da letra e) é a sequência de Fibonacci, e a resposta é 13.");
+            alert("A lógica da letra f) é por seguir a sequencia a resposta é 20.");
+        }
+
+        function Ex_5(){
+            alert("Ligaria todas e apagaria a da minha sala, assim descobrindo uma,\n e depois acenderia uma e iria ver qual das salas esta ligada,\nassim, descobrindo as duas ultimas.")
+        }
+
+    </script>
+    <button onclick="Ex_1()">Ex.1</button><br><br>
+    <button onclick="Ex_2()">Ex.2</button><br><br>
+    <button onclick="Ex_3()">Ex.3</button><br><br>
+    <button onclick="Ex_4()">Ex.4</button><br><br>
+    <button onclick="Ex_5()">Ex.5</button><br><br>
+</body>
+</html>
